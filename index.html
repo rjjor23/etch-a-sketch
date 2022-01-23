@@ -12,7 +12,33 @@
     <h1>Etch-A-Sketch</h1>
   </div>
   <div id="container">
-    <div id="controlPanel"></div>
+    <div id="controlPanel">
+      <h2 class="controlPanelTitle">
+        Control Panel
+      </h2>
+      <div class="sliderContainer">
+        <h3 class="control sliderTitle">Choose Grid Size</h3>
+        <input type="range" min="8" max="32" value="8" class="slider" id="gridRange">
+        <p>
+          Columns: 
+          <span id="sliderValue"></span>
+        </p>
+        <p>
+          Rows:  
+          <span id="sliderValue"></span>
+        </p>
+        
+      </div>
+      <div class="modeContainer">
+        <h3 class="control">Choose Mode</h3>
+        <input type="button" class="modeBtn" id="modeBtnClassic" value="classic">
+        <input type="button" class="modeBtn" id="modeBtnColors" value="colors">
+      </div>
+       <div class="clearContainer">
+         <h3 class="control">Clear Etch-a-Sketch</h3>
+         <input type="button" value="clear">
+       </div>
+    </div>
     <div id="gridContainer"></div>
   </div>
   <div id="footer">
