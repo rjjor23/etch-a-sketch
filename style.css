@@ -61,6 +61,7 @@ body {
 .control {
   text-align: center;
   border-bottom: 1px solid black;
+  margin-bottom: 8px;
 }
 
 /* slider */
@@ -91,14 +92,14 @@ input[type=button] {
 .modeContainer {
   padding: 8px;
   margin: 10px auto;
-  height: 44px;
+  /* height: 44px; */
   line-height: 0;
   border: 1px solid #353535;
 }
  .modeContainer > h3 {
 /* color: blue; */
-border: none;
-display: inline-block;
+/* border: none; */
+display: block;
 padding: 8px;
 /* border: 2px solid yellow; */
  }
