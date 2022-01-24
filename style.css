@@ -91,14 +91,23 @@ input[type=button] {
 .modeContainer {
   padding: 8px;
   margin: 10px auto;
-  height: 100px;
-  border: 2px solid yellow;
+  height: 44px;
+  line-height: 0;
+  border: 1px solid #353535;
 }
+ .modeContainer > h3 {
+/* color: blue; */
+border: none;
+display: inline-block;
+padding: 8px;
+/* border: 2px solid yellow; */
+ }
 
 .modeBtn {
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
   padding: 4px;
+  margin-left: 16px;
 }
 
 .clearContainer {
