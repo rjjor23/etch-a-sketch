@@ -51,6 +51,9 @@ body {
   border: 20px solid crimson;
   border-radius: 25px;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 /* control panel title */
 .controlPanelTitle {
@@ -69,7 +72,8 @@ body {
   padding: 8px;
   margin: 10px auto;
   height: 140px;
-  border: 2px solid yellow;
+  width: 80%;
+  border: 1px solid #353535;
 }
 
 #gridRange {
@@ -83,16 +87,18 @@ body {
 }
 /* button style*/
 input[type=button] {
-  width: 64px;
-  height: 24px;
+  width: 72px;
+  height: 32px;
   background-color: crimson;
-  color: black;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .modeContainer {
   padding: 8px;
   margin: 10px auto;
   /* height: 44px; */
+  width: 80%;
   line-height: 0;
   border: 1px solid #353535;
 }
@@ -103,7 +109,12 @@ display: block;
 padding: 8px;
 /* border: 2px solid yellow; */
  }
-
+.modeBtnContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4px;
+  /* border: 2px solid yellow; */
+}
 .modeBtn {
   text-transform: uppercase;
   display: inline-block;
@@ -115,7 +126,13 @@ padding: 8px;
   padding: 8px;
   margin: 10px auto;
   height: 100px;
-  border: 2px solid yellow;
+  width: 80%;
+  border: 1px solid #353535;
+}
+
+#clearBtn {
+  margin: 0 auto;
+  display: block;
 }
 
 #gridContainer {
