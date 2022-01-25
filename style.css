@@ -59,6 +59,8 @@ body {
 .controlPanelTitle {
   border-bottom: double;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 /* title for each control box */
 .control {
