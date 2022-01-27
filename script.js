@@ -9,7 +9,14 @@ console.log(container);
 
 // functions 
 
-// creates grid function
+// get value from slider
+// let sliderVal = document.getElementById('gridRange');
+// let gridVal = sliderVal.value;
+
+// console.log(gridVal);
+// console.log(sliderVal);
+
+// creates makeGrid function
 function makeGrid(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
@@ -22,7 +29,23 @@ function makeGrid(rows, cols) {
   };
 };
 
-makeGrid(64,64);
+// sizeGrid function
+
+var size = '8';
+
+function sizeGrid() {
+  let colRow = document.getElementById('gridRange').value;
+  document.getElementById('colValue').innerHTML = colRow;
+  document.getElementById('rowValue').innerHTML = colRow;
+  function changeSize(colRow) {
+    size = colRow;
+  }
+  changeSize(colRow);
+}
+
+document.getElementById('gridRange').addEventListener('input', sizeGrid);
+
+makeGrid(size, size);
 
 // change color on hover function
 let test = document.querySelectorAll("#gridContainer > div");
@@ -37,5 +60,5 @@ test.forEach((item) => {
 });
 
 // range slider
-let range = document.querySelector('#gridRange');
-console.log(range);
+// let range = document.querySelector('#gridRange');
+// console.log(range);
